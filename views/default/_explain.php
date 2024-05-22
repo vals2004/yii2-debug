@@ -9,6 +9,7 @@
 if ($connection->driverName == 'mysql') {
 	foreach ($explainRows as &$row) {
 		foreach ($row as &$cell) {
+			$cell = $cell==null ? '' : $cell;
 			$cell = preg_replace('/\s*[,:;]\s*/', '$0 ', $cell);
 			$cell = preg_replace('/\s*[\[({]\s*/', ' $0', $cell);
 			$cell = preg_replace('/\s*[\])}]\s*/', '$0 ', $cell);
