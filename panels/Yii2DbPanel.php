@@ -261,7 +261,7 @@ class Yii2DbPanel extends Yii2DebugPanel
 				do {
 					$sls = 0;
 					if (($qend = strpos($query, $qchar, $qend + 1)) !== false) {
-						while ($query{$qend - $sls - 1} == '\\') $sls++;
+						while ($query[$qend - $sls - 1] == '\\') $sls++;
 					} else {
 						$qend = strlen($query) - 1;
 					}
