@@ -13,6 +13,7 @@
 		{
 			"name": "Valeriy Zavolodko",
 			"email": "vals2004@gmail.com"
+		}
 	],
 	"require": {
 		"php": ">=5.1.0",
